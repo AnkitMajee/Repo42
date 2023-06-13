@@ -5,10 +5,10 @@ interface Shape {
 }
 
 class Square implements Shape {
-    private double side;
+    private double side;        // instance variable jo method ka bahar implement hota hai
 
     public Square(double side) {
-        this.side = side;
+        this.side = side;         // this variable instance variable aur local variable koi idfi. krne mai help karta hai
     }
 
     public double calculatePerimeter() {
@@ -17,7 +17,7 @@ class Square implements Shape {
 }
 
 class Circle implements Shape {
-    private double radius;
+    private double radius;      // instance variable
 
     public Circle(double radius) {
         this.radius = radius;
@@ -33,13 +33,13 @@ public class InterfaceShape {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Side of Square: ");
         int s = sc.nextInt();
-        Square obj1 = new Square(s);
+        Square obj1 = new Square(s);  // obj of Square class created as constructor its get parameter
 
         System.out.print("Enter radius of Circle: ");
         int radius = sc.nextInt();
-        Circle obj2 = new Circle(radius);
+        Circle obj2 = new Circle(radius);  // obj of Circle class created
 
-        double squarePerimeter = obj1.calculatePerimeter();
+        double squarePerimeter = obj1.calculatePerimeter();   // obj called from parent class method
         double circlePerimeter = obj2.calculatePerimeter();
 
         System.out.println("Square Perimeter: " + squarePerimeter);
