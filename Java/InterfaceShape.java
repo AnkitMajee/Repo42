@@ -33,14 +33,14 @@ public class InterfaceShape {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Side of Square: ");
         int s = sc.nextInt();
-        Square square = new Square(s);
+        Square obj1 = new Square(s);
 
         System.out.print("Enter radius of Circle: ");
         int radius = sc.nextInt();
-        Circle circle = new Circle(radius);
+        Circle obj2 = new Circle(radius);
 
-        double squarePerimeter = square.calculatePerimeter();
-        double circlePerimeter = circle.calculatePerimeter();
+        double squarePerimeter = obj1.calculatePerimeter();
+        double circlePerimeter = obj2.calculatePerimeter();
 
         System.out.println("Square Perimeter: " + squarePerimeter);
         System.out.println("Circle Perimeter: " + circlePerimeter);
