@@ -20,7 +20,7 @@ class Complex {
     }
 }
 
-public class ComplexOperations {
+public class ComplexOperation {
     public static void main(String[] args) {
         Complex num1 = new Complex(2.5, 3.7);
         Complex num2 = new Complex(1.8, -2.2);

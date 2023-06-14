@@ -8,11 +8,12 @@ class OverloadArea {
     }
 
     public static double calculateArea(double sideLength, String shape) {
-        if (shape.equalsIgnoreCase("square")) {
-            return sideLength * sideLength;
-        } else {
-            throw new IllegalArgumentException("Invalid shape: " + shape);
-        }
+        return sideLength * sideLength;
+        // if (shape.equalsIgnoreCase("square")) {
+        //     return sideLength * sideLength;
+        // } else {
+        //     throw new IllegalArgumentException("Invalid shape: " + shape);
+        // }
     }
 
     public static void main(String[] args) throws IOException {
