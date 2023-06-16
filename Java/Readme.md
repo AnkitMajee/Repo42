@@ -1,6 +1,4 @@
-<h1>How to Run</h1>
-![](https://github.com/AnkitMajee/Repo42/assets/76817118/56d90494-b0df-404b-924d-54728d7e9a28)
-
+<h1>How to Run 🏃‍♀️</h1>
 
 1. open command prompt
 2. c:\Users\Ankit>cd Desktop
