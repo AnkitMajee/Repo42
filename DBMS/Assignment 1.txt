@@ -1,0 +1,81 @@
+--Assignment 1
+-- Create table 👇
+
+-- CREATE TABLE Employees (  
+--     empid NUMBER(10) PRIMARY KEY,  
+--     fname VARCHAR2(64),  
+--     lname VARCHAR2(64),  
+--     salary NUMBER(10),  
+--     deptid NUMBER(2)  
+-- );
+-- select *from Employees; -- to view the table always use this command 👈
+
+-- Alter table commands ADD MODIFY DROP TRANCATE 👇
+
+-- ALTER TABLE Employees MODIFY empid VARCHAR2(6);
+-- ALTER TABLE Employees MODIFY deptid VARCHAR2(6);
+
+--Below is DML insert update delete 👇
+
+-- INSERT INTO Employees VALUES('A101', 'Ankit', 'Majee', 750000, 'D101');
+-- INSERT INTO Employees VALUES('A102', 'Aritra', 'Bag', 70000, 'D101');
+-- INSERT INTO Employees VALUES('B101', 'Ritam', 'Paul', 450000, 'D101');
+-- INSERT INTO Employees VALUES('B102', 'Pritam', 'Das', 150000, 'D101');
+-- INSERT INTO Employees VALUES('C101', 'Sritam', 'Char', 650000, 'D101');
+-- INSERT INTO Employees VALUES('C102', 'Hitam', 'Bara', 450000, 'D101');
+
+--Below is ALTER with UPDATE 👇
+-- ALTER TABLE Employees ADD email VARCHAR2(64);
+
+-- UPDATE Employees 
+-- SET email = 'ankitmajee.05@gmail.com' 
+-- WHERE empid = 'A101';
+
+--select *from Employees;
+
+--Below is ALTER with DROP 👇
+--ALTER TABLE Employees DROP COLUMN email;
+--select *from Employees;
+
+--Below is Select and WHERE command 👇
+--select fname,lname FROM Employees where salary<100000;
+
+--Below is Aggregate command 👇
+-- MAX
+--select MAX(salary) from Employees;
+--SELECT fname, salary FROM Employees WHERE salary = (SELECT MAX(salary) FROM Employees); --Advance sql
+
+--Min
+--select MIN(salary) from Employees;
+
+--count
+--select count(empid) from Employees;
+
+--Sum
+-- select SUM(salary) from Employees
+
+--AVG
+--select AVG(salary) from Employees;
+
+--Below is JOIN command 👇
+--  create table dept(
+--    deptid Varchar2(6),
+--     deptName varchar2(64)
+--  );
+
+-- insert into dept values ('D101','CSE');
+
+--select *from dept;
+
+-- now JOIN code 👇
+
+--select *from Employees JOIN dept ON Employees.deptid = dept.deptid;
+
+
+-- Made with love 🖕🖕🏿🖕 for everybody to everybody --
+
+
+
+
+
+
