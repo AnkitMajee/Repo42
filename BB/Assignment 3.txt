@@ -1,0 +1,101 @@
+--Assignment 3
+-- Create table 👇
+
+-- CREATE TABLE Emp(  
+--     empid VARCHAR2(10) PRIMARY KEY,  
+--     name VARCHAR2(64),
+--     salary NUMBER(10),
+--     deptid VARCHAR2(10) 
+-- );
+
+-- INSERT INTO Emp VALUES('A101', 'Ankit Majee', 750000, 'D101');
+-- INSERT INTO Emp VALUES('A102', 'Aritra Bag', 70000, 'D101');
+-- INSERT INTO Emp VALUES('B101', 'Ritam Paul', 450000, 'D102');
+-- INSERT INTO Emp VALUES('B102', 'Pritam Das', 150000, 'D102');
+-- INSERT INTO Emp VALUES('C101', 'Sritam Char', 650000, 'D103');
+-- INSERT INTO Emp VALUES('C102', 'Hitam Bara', 450000, 'D103');
+
+-- select *from Emp;
+
+-- CREATE TABLE dept(  
+--     deptid VARCHAR2(10) PRIMARY KEY,  
+--     dname VARCHAR2(20),
+--     dloc VARCHAR2(20)  
+-- );
+-- INSERT INTO dept VALUES('D101','sales','Floor 6');
+-- INSERT INTO dept VALUES('D102','IT','Floor 5');
+-- INSERT INTO dept VALUES('D103','HR','Floor 2');
+
+-- SELECT *FROM DEPT;
+
+--To get Highest paying employee of each dept
+
+SELECT
+    Emp.name AS employee_name,
+    Emp.salary,
+    dept.dname AS department_name
+FROM
+    Emp
+JOIN
+    dept ON Emp.deptid = dept.deptid
+WHERE
+    (Emp.deptid, Emp.salary) IN (
+        SELECT deptid, MAX(salary) AS max_salary
+        FROM Emp
+        GROUP BY deptid
+    );
+
+
+
+-- to show record of employess of sales dept
+-- select emp.*, dept.dname, dept.dloc from emp JOIN dept ON emp.deptid= dept.deptid WHERE dept.dname='sales';
+
+--emp table record in descending order
+-- select *from emp order by salary DESC;
+
+-- To show minimum,total avg salary of each dept
+SELECT
+    MIN(Emp.salary) AS Lowest_Salary,
+    SUM(Emp.salary) AS Total_Salary,
+    AVG(Emp.salary) AS Average_Salary,
+    dept.dname AS Department
+FROM
+    Emp
+JOIN
+    dept ON Emp.deptid = dept.deptid
+GROUP BY
+    Emp.deptid, dept.dname;
+
+
+--to show no of emp earning mpre then overall avg sal
+-- select COUNT(empid) FROM Emp WHERE salary>(SELECT AVG(salary) FROM emp);
+
+--To show details of employees working at Floor 2
+select Emp.*, dept.dname,dept.dloc FROM Emp JOIN dept ON emp.deptid = dept.deptid WHERE dept.dloc = 'Floor 2';
+
+
+-- To count no employees in each department
+select COUNT(empid), dept.dname FROM Emp JOIN dept ON emp.deptid = dept.deptid GROUP BY emp.deptid,dept.dname;
+
+-- To show dept where avrage salary is > 20000
+
+SELECT
+    dept.dname AS department_name,
+    AVG(emp.salary) AS AVG
+FROM
+    Emp
+JOIN
+    dept ON Emp.deptid = dept.deptid
+GROUP BY
+    dept.dname, Emp.deptid
+HAVING
+    AVG(emp.salary) > 20000;
+
+
+-- Made with love 🖕🖕🏿🖕 for everybody to everybody --
+
+
+
+
+
+
