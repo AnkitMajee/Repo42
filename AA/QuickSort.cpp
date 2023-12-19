@@ -1,3 +1,5 @@
+//Quick Sort
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -25,12 +27,17 @@ void qSort(int arr[],int l,int h){
  
 int main() {
 	
-    int arr[]={8,4,7,9,3,10,5};
+    int N;
+	cout<<"Enter Size of Array:";
+	cin>>N;
+    int arr[N];
+	 cout<<"Enter array Element:";
+	 for(int i=0;i<N;i++){
+	 	cin>>arr[i];
+	 }
 	
-	int n=sizeof(arr)/sizeof(arr[0]);
-	
-	qSort(arr,0,n-1);
-	
+	qSort(arr,0,N-1);
+	cout<<"Sorted Array:";
 	for(int x: arr)
 	    cout<<x<<" ";
 }

@@ -1,3 +1,5 @@
+//Heap Sort
+
 #include <iostream> 
 using namespace std; 
 
@@ -44,12 +46,18 @@ void printArray(int arr[], int n)
  
 int main() 
 { 
-	int arr[] = {12, 11, 13, 5, 6, 7}; 
-	int n = sizeof(arr)/sizeof(arr[0]); 
+	int N;
+	cout<<"Enter Size of Array:";
+	cin>>N;
+    int arr[N];
+	 cout<<"Enter array Element:";
+	 for(int i=0;i<N;i++){
+	 	cin>>arr[i];
+	 } 
 
-	heapSort(arr, n); 
+	heapSort(arr, N); 
 
 	cout << "Sorted array is \n"; 
-	printArray(arr, n); 
+	printArray(arr, N); 
 } 
 
