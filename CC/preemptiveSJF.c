@@ -1,8 +1,9 @@
 //PREEMPTIVE SJF
 
-#include <stdio.h>
+#include<stdio.h>
 #include<math.h>
 #include<limits.h>
+#include <stdbool.h>
 void waiting_time(int *at, int *bt, int *wt, int *rt, int n, float *total_wt)
 {
     int complete = 0, t = 0, minm = INT_MAX;
