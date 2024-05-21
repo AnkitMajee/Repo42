@@ -1,0 +1,71 @@
+setwd("/home/student1/Desktop/CSSE214002")
+setwd("/CSSE214002")
+dat=iris
+View(dat)
+data=iris
+data= data[],1:4]
+data= data[,1:4]
+View(data)
+dim(data)
+cls=kmeans(data,3,algorithm = "MacQueen")
+cls$cluster
+cls[["cluster"]]
+table(cls$cluster)
+cls=kmeans(data,3,iter.max=1000,nstart=5,algorithm = "Hartigan-wong")
+cls=kmeans(data,3,iter.max=1000,nstart=5,algorithm = "Hartigan-Wong")
+table(cls$cluster)
+cls$centers
+View(cls)
+cls[["withinss"]]
+cls$totss
+cls$tot.witness
+cls$tot.withinss
+cls$withinss
+cls2=kmeans(data,3,iter.max=1000,nstart=2,algorithm = "Lloyd")
+cls2$withinss
+cls2$totss
+savehistory("day4.txt")
+save.image("day4_data.RData")
+setwd("-/desktop/CSE214002")
+getwd()
+setwd("/desktop/CSE214002")
+setwd("home/desktop/CSE214002")
+data('UArrests')
+data("UArrests")
+data("USArrests")
+View(USArrests)
+df =USArrests
+View(df)
+min(df$Murder)
+max(df$Murder)
+max(df$Assault)
+scaled_df=scale(df)
+sumary(scaled_df)
+summary(scaled_df)
+head(df)
+head(scale_df)
+head(scaled_df)
+res.dist=dist(scaled_df,method="euclidean")
+res.dist
+View(scaled_df)
+as.matrix(res.dist)[1:3][1:3]
+as.matrix(res.dist)[1:3,1:3]
+dist_mat=as.matrix(res.dist)[1:3,1:3]
+dist_mat
+as.data.frame(res.dist)
+res.hc=hclust(res.dist,method="complete")
+View(res.hc)
+library("factoryextra")
+sudo apt-get install cmake
+install.packages("factorial")
+library("factoryextra")
+install.packages("factoryextra")
+install.packages("factroextra")
+install.packages("factoextra")
+plot(res.hc)
+grp=cutree(res.hc,k=4)
+head(grp,n=4)
+head(grp,n=50)
+library("factoextra")
+table(grp)
+savehistory("day5.txt")

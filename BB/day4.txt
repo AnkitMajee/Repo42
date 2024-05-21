@@ -1,0 +1,98 @@
+for (i in seq(1,30,by=1))
+{}
+for (i in seq(1,30,by=1))
+{}
+for (i in seq(1,30,by=1)){}
+for (i in seq(1,30,by=1))
+for (in in seq(1,30,by=1))
+for (in in seq(1,30,by=1))
+for (i in seq(1,30,by=1))
+{
+if(i==10)
+break
+print(paste0("hii ",i))
+}
+for (i in seq(1,30,by=1))
+{
+if(i==10)
+next
+print(paste0("hii ",i))
+}
+getwd()
+source(rprog.R)
+source(rprog.r)
+source(rprog.R)
+setwd("C:\Users\HP\Documents")
+setwd("C:/Users/HP/Documents")
+source(rprog.R)
+next
+print(paste0("hii ",i))
+{
+if(i==10)
+next
+print(paste0("hii ",i))
+}
+{
+if(i==10)
+next
+print(paste0("hii ",i))
+}
+for (i in seq(1,30,by=1))
+{
+if(i==10)
+next
+print(paste0("hii ",i))
+}
+for (i in seq(1,30,by=1))
+{
+print(paste0("hii ",i))
+if(i==10)
+break
+}
+for (i in seq(1,30,by=1))
+{
+print(paste0("hii ",i))
+print(paste("hi",i,sep=","))
+if(i==10)
+break
+}
+source('rprog.R')
+func1(10,20,30)
+r=func1(10,20,30)
+r
+souce("prpog.R")
+souce("rpog.R")
+souce("rprog.R")
+souce('rprog.R')
+source('rprog.R')
+func1(10,10,10)
+func1(10,20,10)
+source('rprog.R')
+func1(10,10,10)
+car_data=mtcars
+View(car_data)
+sumary(car_data$speed)
+summary(car_data$speed)
+summary(car_data$mpg)
+min(car_data$mpg)
+mean(car_data$mpg)
+summary(car_data)
+plot(car_data$mpg,car_data$isp,main="mpg vs isp display")
+plot(car_data$mpg,car_data$disp,main="mpg vs disp")
+plot(car_data$mpg,car_data$disp,main="mpg vs disp",xlab="mpg",ylab="disp",col="purple")
+hist(car_data$cyl)
+table(car_data$cyl)
+plot(car_data$cyl,main="histogram of cyl(mtcars",xlab="cyl",ylab="freq",col="purple")
+hist(car_data$cyl,main="histogram of cyl(mtcars",xlab="cyl",ylab="freq",col="purple")
+hist(car_data$cyl,main="histogram of cyl(mtcars",xlab="cyl",ylab="freq",col="grey",border="purple")
+boxplot(car_data$disp)
+summary(car_dat$disp)
+summary(car_data$disp)
+summary(car_data$disp~car_data$cyl,mtcars)
+boxplot(car_data$disp~car_data$cyl,mtcars)
+boxplot(car_data$disp~car_data$cyl,mtcars,col=c("purple","orange","black"))
+boxplot(car_data$disp~car_data$cyl,mtcars,col=c("purple","orange","white"))
+cor(car_data$mpg,car_data$disp)
+data_iris=iris
+cor(data_iris$Sepal.Length,data_iris$Petal.Length)
+savehistory(("day4.txt"))
