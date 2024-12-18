@@ -1,7 +1,0 @@
-While(i)
-{
-    if(p>0)
-         p++; 
-    else 
-       	q=q-1;
-}

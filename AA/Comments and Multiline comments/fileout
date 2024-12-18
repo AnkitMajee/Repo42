@@ -1,7 +1,0 @@
-
-do{ 
-if(p > 0)
-q++; 
-else
-q = q - 1.0; 
-}while(1);
