@@ -1,6 +1,6 @@
 *.exe
 *.class
-
+*.problems_from_life
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
